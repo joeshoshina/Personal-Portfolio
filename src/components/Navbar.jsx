@@ -1,35 +1,46 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ onSelect, page }) => {
   return (
-    <>
-      <a>
-        <span className="nav-item">Joe's Website</span>
-      </a>
-
-      <ul className="nav nav-underline nav justify-content-end">
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Contact
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" aria-disabled="true">
-            Disabled
-          </a>
-        </li>
-      </ul>
-    </>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <a className="nav-link" href="#" onClick={() => onSelect("home")}>
+          Joe's Portfolio
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a
+              className="nav-link"
+              href="#"
+              onClick={() => onSelect("testAPIcall")}
+            >
+              testAPICall
+            </a>
+            <a className="nav-link" href="#" onClick={() => onSelect("about")}>
+              About
+            </a>
+            <a
+              className="nav-link"
+              href="#"
+              onClick={() => onSelect("contact")}
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 };
 

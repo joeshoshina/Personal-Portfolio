@@ -8,9 +8,31 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 
 function App() {
+  const [activePage, setActivePage] = useState("home");
+
+  const handleNavClick = (page) => {
+    setActivePage(page); // Update the active page based on the clicked link
+  };
+
+  const renderPage = () => {
+    switch (activePage) {
+      case "about":
+        return <About />;
+      case "contact":
+        return <Contact />;
+      case "testAPIcall":
+        // Placeholder for testAPIcall component
+        return <div>testAPIcall</div>;
+      case "home":
+      default:
+        return <Home />;
+    }
+  };
+
   return (
     <div>
-      <Navbar />
+      <Navbar page={activePage} onSelect={handleNavClick} />
+      <main>{renderPage()}</main>
     </div>
   );
 }
