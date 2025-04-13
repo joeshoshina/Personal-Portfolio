@@ -1,0 +1,30 @@
+h1 {
+  color: #4a4a4a;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.projectContainer {
+  border: 8px solid red;
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically (optional) */
+  column-gap: 100px; /* Adds space between cards */
+  height: 100vh; /* Optional: makes the container full height */
+  flex-wrap: wrap; /*Allows items to wrap to the next line */
+}
+
+.card {
+  border: 10px solid black;
+  background-color: black;
+}
+
+#projects-title {
+  color: #4a4a4a;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  justify-content: center;
+}

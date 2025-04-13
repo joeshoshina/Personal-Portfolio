@@ -1,11 +1,8 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Optional, for toggler
-
 import { useState } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import About from "./components/About.jsx";
+import Contact from "./components/Contact.jsx";
 
 function App() {
   const [activePage, setActivePage] = useState("home");

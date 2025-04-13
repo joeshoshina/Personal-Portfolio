@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = ({ onSelect, page }) => {
+const Navbar = ({ onSelect }) => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
