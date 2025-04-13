@@ -1,5 +1,5 @@
 import React from "react";
-const Card = ({ projectName, img }) => {
+const Card = ({ projectName, img, clicked }) => {
   return (
     <div className="card" style={{ width: "40rem" }}>
       <img
@@ -10,7 +10,7 @@ const Card = ({ projectName, img }) => {
       />
       <div className="card-body">
         <h5 className="card-title">{projectName}</h5>
-        <a href="#" className="btn btn-primary">
+        <a href="#" className="btn btn-primary" onClick={clicked}>
           Learn More!
         </a>
       </div>

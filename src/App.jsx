@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
+import BondingGame from "./components/BondingGame.jsx";
+import MovieSearchApp from "./components/MovieSearchApp.jsx";
 
 function App() {
   const [activePage, setActivePage] = useState("home");
@@ -20,9 +22,13 @@ function App() {
       case "testAPIcall":
         // Placeholder for testAPIcall component
         return <div>testAPIcall</div>;
+      case "bonding":
+        return <BondingGame />;
+      case "movie":
+        return <MovieSearchApp />;
       case "home":
       default:
-        return <Home />;
+        return <Home onCardClick={handleNavClick} />;
     }
   };
 
