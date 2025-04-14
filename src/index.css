@@ -22,9 +22,96 @@ h1 {
 }
 
 #projects-title {
-  color: #4a4a4a;
-  font-size: 5rem;
+  color: #ffffff;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
   justify-content: center;
 }
+
+.BondingGameContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 30px; /* spacing between video and text */
+  padding: 20px;
+  flex-wrap: wrap; /* optional: better for responsiveness */
+  border: green 2px solid; /* optional: for debugging */
+  height: 100vh;
+}
+
+.responsive-video {
+  width: 600px;
+  height: auto;
+  border-radius: 12px; /* optional styling */
+  border: black 2px solid;
+}
+
+.ProjectTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  flex: 1;
+  gap: 20px;
+  border: black 2px solid;
+  max-height: 100vh;
+  border-radius: 12px;
+  background-color: #2c2c2c;
+}
+
+.BondingGameDescription {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  display: flex;
+  border: blue 2px solid;
+  max-width: 920px;
+}
+
+.bottom-paragraphs {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border: red 2px solid;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  border: blue 2px solid;
+  max-width: 450px;
+  height: auto;
+  overflow-wrap: break-word;
+}
+
+.top-paragraphs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #2c2c2c !important;
+}
+
+.custom-navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #10a37f !important; /* optional highlight */
+}
+
+/* make stack once under 1408 width */
+/* Increase font weight for titles and change font size to be bigger
+create box elements for paragraphs */

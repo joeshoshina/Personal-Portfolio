@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ onSelect }) => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg custom-navbar">
       <div className="container-fluid">
         <a className="nav-link" href="#" onClick={() => onSelect("home")}>
           Joe's Portfolio
