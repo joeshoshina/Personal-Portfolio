@@ -6,7 +6,7 @@ import movieImg from "../assets/movie.png";
 function Home({ onCardClick }) {
   return (
     <>
-      <h1 className="text-center" id="projects-title">
+      <h1 className="text-center" id="main-projects-title">
         My Projects
       </h1>
       <div className="projectContainer">
