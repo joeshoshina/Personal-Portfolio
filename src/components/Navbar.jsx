@@ -8,7 +8,7 @@ const Navbar = ({ onSelect }) => {
           Joe's Portfolio
         </a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler nav-tog-custom"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"

@@ -186,3 +186,15 @@ body {
 .custom-navbar .nav-link:hover {
   color: #10a37f !important; /* optional highlight */
 }
+.nav-tog-custom {
+  background-color: white !important;
+  color: #ffffff !important;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
