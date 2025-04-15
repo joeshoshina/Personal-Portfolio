@@ -1,3 +1,4 @@
+/* Home Page */
 h1 {
   color: #4a4a4a;
   font-size: 2rem;
@@ -21,6 +22,7 @@ h1 {
   background-color: black;
 }
 
+/* Project Page */
 #projects-title {
   color: #ffffff;
   font-size: 3rem;
@@ -29,7 +31,7 @@ h1 {
   justify-content: center;
 }
 
-.BondingGameContainer {
+.ProjectDescriptionContainer {
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
@@ -37,8 +39,8 @@ h1 {
   gap: 30px; /* spacing between video and text */
   padding: 20px;
   flex-wrap: wrap; /* optional: better for responsiveness */
-  border: green 2px solid; /* optional: for debugging */
-  height: 100vh;
+  /* border: green 2px solid; optional: for debugging */
+  height: 80vh;
 }
 
 .responsive-video {
@@ -46,6 +48,7 @@ h1 {
   height: auto;
   border-radius: 12px; /* optional styling */
   border: black 2px solid;
+  background-color: #2c2c2c;
 }
 
 .ProjectTextBox {
@@ -56,43 +59,76 @@ h1 {
   flex: 1;
   gap: 20px;
   border: black 2px solid;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   border-radius: 12px;
   background-color: #2c2c2c;
 }
 
-.BondingGameDescription {
+.BottomDescription {
   margin-top: 10px;
-  margin-bottom: 60px;
-  display: flex;
-  border: blue 2px solid;
-  max-width: 920px;
+  /* border: blue 2px solid; */
+  height: 300px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
-.bottom-paragraphs {
+.BottomBox {
   text-align: left;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  border: red 2px solid;
+  gap: 30px;
+  /* border: red 2px solid; */
   flex-wrap: wrap;
   height: auto;
+  margin: 10px;
+  margin-top: 0px;
+  flex: 1;
 }
 
-.box {
+.bottom-paragraphs {
   display: flex;
   flex-wrap: wrap;
-  border: blue 2px solid;
+  justify-content: center;
+  align-content: space-evenly;
+  border: #10a37f 2px solid;
+  border-radius: 12px;
   max-width: 450px;
-  height: auto;
-  overflow-wrap: break-word;
+  flex-direction: column;
 }
 
+.TopDescription {
+  margin-top: 10px;
+  /* border: green 2px solid; */
+  height: 250px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.TopBox {
+  max-width: 1000px;
+  justify-content: center;
+  display: flex;
+  /* border: red 2px solid; */
+  margin: 10px;
+  margin-bottom: 0px;
+}
 .top-paragraphs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: space-evenly;
+  border: #10a37f 2px solid;
+  border-radius: 12px;
+  max-width: 460px;
+  flex-direction: column;
 }
+.SpanTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Main Theme */
 body {
   background-color: #1e1e1e;
   color: #ffffff;
