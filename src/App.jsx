@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
-import About from "./components/About.jsx";
+import AboutMe from "./components/AboutMe.jsx";
 import Contact from "./components/Contact.jsx";
 import BondingGame from "./components/BondingGame.jsx";
 import MovieSearchApp from "./components/MovieSearchApp.jsx";
@@ -16,7 +16,7 @@ function App() {
   const renderPage = () => {
     switch (activePage) {
       case "about":
-        return <About />;
+        return <AboutMe />;
       case "contact":
         return <Contact />;
       case "testAPIcall":

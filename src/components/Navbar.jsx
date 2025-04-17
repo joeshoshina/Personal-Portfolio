@@ -25,10 +25,10 @@ const Navbar = ({ onSelect }) => {
               href="#"
               onClick={() => onSelect("testAPIcall")}
             >
-              testAPICall
+              TestAPICall
             </a>
             <a className="nav-link" href="#" onClick={() => onSelect("about")}>
-              About
+              About Me
             </a>
             <a
               className="nav-link"
