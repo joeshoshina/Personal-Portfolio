@@ -1,0 +1,109 @@
+#projects-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.ProjectDescriptionContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 30px; /* spacing between video and text */
+  padding: 20px;
+  flex-wrap: wrap; /* optional: better for responsiveness */
+  /* border: green 2px solid; optional: for debugging */
+  height: 80vh;
+}
+
+.responsive-video {
+  width: 600px;
+  height: auto;
+  border-radius: 12px; /* optional styling */
+  border: black 2px solid;
+  background-color: #2c2c2c;
+}
+
+.ProjectTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  flex: 1;
+  gap: 20px;
+  border: black 2px solid;
+  /* max-height: 100vh; */
+  border-radius: 12px;
+  background-color: #2c2c2c;
+}
+
+.BottomDescription {
+  margin-top: 10px;
+  /* border: blue 2px solid; */
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.BottomBox {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /* border: red 2px solid; */
+  flex-wrap: wrap;
+  height: auto;
+  margin: 10px;
+  margin-top: 0px;
+  flex: 1;
+}
+
+.bottom-paragraphs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  border: #085646 5px solid;
+  border-radius: 12px;
+  max-width: 450px;
+  flex-direction: column;
+  box-shadow: 0 0 0 2px black;
+}
+
+.TopDescription {
+  margin-top: 10px;
+  /* border: green 2px solid; */
+  height: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+.TopBox {
+  max-width: 1000px;
+  justify-content: center;
+  display: flex;
+  /* border: red 2px solid; */
+  margin: 10px;
+  margin-bottom: 0px;
+}
+.top-paragraphs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  border: #085646 5px solid;
+  border-radius: 12px;
+  max-width: 460px;
+  flex-direction: column;
+  box-shadow: 0 0 0 2px black;
+}
+.SpanTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}

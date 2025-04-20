@@ -1,0 +1,11 @@
+// Bootstrap variable overrides
+@import "variables";
+
+// Bootstrap core
+@import "bootstrap/scss/bootstrap";
+
+// Your custom styles
+@import "home";
+@import "project";
+@import "about";
+@import "components";

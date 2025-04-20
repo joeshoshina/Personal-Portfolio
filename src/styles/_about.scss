@@ -1,0 +1,51 @@
+.AboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // border: #008000 solid 2px;
+  height: 90vh;
+}
+.PitchBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // border: red solid 2px;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.EducationBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  // border: red solid 2px;
+  margin-top: 50px;
+  color: white;
+}
+.AboutImgBox {
+  border: #085646 solid 2px;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.about-me-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover; /*keep aspect ratio*/
+  display: block;
+}
+.AboutDescriptionBox {
+  border: #085646 solid 3px;
+  border-radius: 12px;
+  background-color: #2c2c2c;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0 0 0 2px black;
+}
+.AboutDescription {
+  margin: 10px;
+  max-width: 500px;
+  color: white;
+}
