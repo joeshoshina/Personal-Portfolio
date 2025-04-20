@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
 import AboutMe from "./components/AboutMe.jsx";
-import Contact from "./components/Contact.jsx";
+// import Contact from "./components/Contact.jsx";
 import BondingGame from "./components/BondingGame.jsx";
 import MovieSearchApp from "./components/MovieSearchApp.jsx";
 
@@ -10,6 +10,10 @@ function App() {
   const [activePage, setActivePage] = useState("home");
 
   const handleNavClick = (page) => {
+    if (page === "contact") {
+      window.open("https://your-contact-form-or-link.com", "_blank");
+      return; // stop further state update
+    }
     setActivePage(page); // Update the active page based on the clicked link
   };
 
@@ -17,8 +21,8 @@ function App() {
     switch (activePage) {
       case "about":
         return <AboutMe />;
-      case "contact":
-        return <Contact />;
+      // case "contact":
+      //   return <Contact />;
       case "testAPIcall":
         // Placeholder for testAPIcall component
         return <div>testAPIcall</div>;
