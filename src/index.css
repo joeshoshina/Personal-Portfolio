@@ -124,17 +124,9 @@ h1 {
   border-radius: 12px;
   max-width: 450px;
   flex-direction: column;
-}
-.BottomOutline {
-  border: black 2px solid;
-  border-radius: 12px;
-  height: 376px;
+  box-shadow: 0 0 0 2px black;
 }
 
-.TopOutline {
-  border: black 2px solid;
-  border-radius: 12px;
-}
 .TopDescription {
   margin-top: 10px;
   /* border: green 2px solid; */
@@ -159,6 +151,7 @@ h1 {
   border-radius: 12px;
   max-width: 460px;
   flex-direction: column;
+  box-shadow: 0 0 0 2px black;
 }
 .SpanTitle {
   font-size: 1.5rem;
@@ -206,26 +199,87 @@ body {
 .AboutMeContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  justify-content: flex-start;
   border: #008000 solid 2px;
   height: 90vh;
 }
 .PitchBox {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   border: red solid 2px;
+  gap: 100px;
+  flex-wrap: wrap;
 }
 .EducationBox {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   border: red solid 2px;
+  margin-top: 50px;
 }
 .AboutImgBox {
   border: #085646 solid 2px;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.about-me-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover; /*keep aspect ratio*/
+  display: block;
 }
 .AboutDescriptionBox {
-  border: #085646 solid 2px;
+  border: #085646 solid 3px;
+  border-radius: 12px;
+  background-color: #2c2c2c;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0 0 0 2px black;
+}
+.AboutDescription {
+  margin: 10px;
+  max-width: 500px;
+}
+
+/* AboutMe Card */
+.customCard {
+  border: #085646 solid 3px;
+  border-radius: 12px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #2c2c2c;
+  box-shadow: 0 0 0 2px black;
+}
+.custom-card-img-top-container {
+  display: flex;
+  justify-content: center;
+  border: #085646 solid 3px;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 0 0 2px black;
+  overflow: hidden; /*Prevents child from overflowing*/
+}
+.custom-card-img-top {
+  width: 100%;
+}
+.custom-card-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 10px;
+  flex-direction: column;
+}
+.custom-card-text {
+  text-align: center;
+  margin: 5px;
+}
+.TextTitle {
+  font-weight: bold;
+  /* margin-bottom: 30px; */
 }

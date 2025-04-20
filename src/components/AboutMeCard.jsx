@@ -1,12 +1,22 @@
 import React from "react";
 
-const AboutMeCard = ({ description, img, altDescription }) => {
+const AboutMeCard = ({
+  description,
+  description2,
+  description3,
+  img,
+  altDescription,
+}) => {
   return (
     <>
-      <div className="card" style={{ width: "18rem" }}>
-        <img src={img} className="card-img-top" alt={altDescription} />
-        <div className="card-body">
-          <p className="card-text">{description}</p>
+      <div className="customCard" style={{ width: "18rem" }}>
+        <div className="custom-card-img-top-container">
+          <img src={img} className="custom-card-img-top" alt={altDescription} />
+        </div>
+        <div className="custom-card-body">
+          <p className="custom-card-text TextTitle">{description}</p>
+          <p className="custom-card-text">{description2}</p>
+          <p className="custom-card-text">{description3}</p>
         </div>
       </div>
     </>
