@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 // import Contact from "./components/Contact.jsx";
+import TestAPICall from "./components/TestAPICall.jsx";
 import BondingGame from "./components/BondingGame.jsx";
 import MovieSearchApp from "./components/MovieSearchApp.jsx";
 
@@ -11,7 +12,10 @@ function App() {
 
   const handleNavClick = (page) => {
     if (page === "contact") {
-      window.open("https://your-contact-form-or-link.com", "_blank");
+      window.open(
+        "https://preeminent-taiyaki-3bc756.netlify.app/Joe%20Hoshina%20Resume.pdf",
+        "_blank"
+      );
       return; // stop further state update
     }
     setActivePage(page); // Update the active page based on the clicked link
@@ -21,11 +25,8 @@ function App() {
     switch (activePage) {
       case "about":
         return <AboutMe />;
-      // case "contact":
-      //   return <Contact />;
       case "testAPIcall":
-        // Placeholder for testAPIcall component
-        return <div>testAPIcall</div>;
+        return <TestAPICall />;
       case "bonding":
         return <BondingGame />;
       case "movie":
