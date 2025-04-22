@@ -4,8 +4,8 @@ const Card = ({ projectName, img, clicked }) => {
     <div className="card" style={{ width: "40rem" }}>
       <img
         src={img}
-        className="card-img-top no-radius"
-        alt="Bonding-Game img"
+        className="card-img-top no-radius text-white"
+        alt="Project Image"
         style={{ width: "100%", height: "430px", objectFit: "cover" }}
       />
       <div className="card-body">
