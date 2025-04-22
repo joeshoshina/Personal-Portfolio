@@ -7,11 +7,9 @@ const TestAPICall = () => {
   // Grabs 2 random image objects from the Harvard Museum API
   const getImage = () => {
     axios
-      .get(
-        `https://api.harvardartmuseums.org/image?apikey=${API_KEY}&size=2&sort=random`
-      )
+      .get(`http://localhost:8080/api/images`)
       .then((res) => {
-        const urls = res.data.records.map((record) => record.baseimageurl);
+        const urls = res.data.images;
         setImageUrls(urls);
       })
       .catch((err) => {
