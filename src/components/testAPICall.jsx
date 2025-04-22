@@ -36,7 +36,7 @@ const TestAPICall = () => {
             </div>
             <div className="img-box">
               <img
-                className="img-fluid object-fit-cover w-100 h-100"
+                className="img-fluid object-fit-cover w-100 h-100 text-white"
                 src={imageUrls[1]}
                 alt="Art piece from Harvard Museum"
               />
