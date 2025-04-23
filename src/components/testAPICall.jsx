@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
-const API_KEY = import.meta.env.VITE_HM_API_KEY;
 
 const TestAPICall = () => {
   const [imageUrls, setImageUrls] = useState([]);
   // Grabs 2 random image objects from the Harvard Museum API
   const getImage = () => {
     axios
-      .get(`http://localhost:8080/api/images`)
+      .get(`https://render-express-deployment-mk94.onrender.com/api/images`)
       .then((res) => {
         const urls = res.data.images;
         setImageUrls(urls);
